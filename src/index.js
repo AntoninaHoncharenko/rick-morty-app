@@ -5,8 +5,8 @@ import { App } from 'components/App';
 import { AuthContextProvider } from './context/AuthContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode basename="/rick-morty-app">
-    <BrowserRouter>
+  <React.StrictMode>
+    <BrowserRouter basename="/rick-morty-app">
       <AuthContextProvider>
         <App />
       </AuthContextProvider>

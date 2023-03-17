@@ -17,9 +17,9 @@ const LoginPage = () => {
   };
 
   useEffect(() => {
-    // if (user !== '') {
-    //   navigate('/main', { replace: true });
-    // }
+    if (user !== '') {
+      navigate('/main', { replace: true });
+    }
   }, [user, navigate]);
 
   return (
