@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/rick-morty-app/static/css/main.c3d5249d.css",
+    "main.js": "/rick-morty-app/static/js/main.99802832.js",
+    "static/js/937.01ebab2d.chunk.js": "/rick-morty-app/static/js/937.01ebab2d.chunk.js",
+    "static/js/867.e52197f0.chunk.js": "/rick-morty-app/static/js/867.e52197f0.chunk.js",
+    "static/js/977.717891b4.chunk.js": "/rick-morty-app/static/js/977.717891b4.chunk.js",
+    "static/js/270.9b626c37.chunk.js": "/rick-morty-app/static/js/270.9b626c37.chunk.js",
+    "static/js/820.cfe44730.chunk.js": "/rick-morty-app/static/js/820.cfe44730.chunk.js",
+    "static/media/heroimg.png": "/rick-morty-app/static/media/heroimg.7119f9df7519fa43c7a0.png",
+    "index.html": "/rick-morty-app/index.html",
+    "main.c3d5249d.css.map": "/rick-morty-app/static/css/main.c3d5249d.css.map",
+    "main.99802832.js.map": "/rick-morty-app/static/js/main.99802832.js.map",
+    "937.01ebab2d.chunk.js.map": "/rick-morty-app/static/js/937.01ebab2d.chunk.js.map",
+    "867.e52197f0.chunk.js.map": "/rick-morty-app/static/js/867.e52197f0.chunk.js.map",
+    "977.717891b4.chunk.js.map": "/rick-morty-app/static/js/977.717891b4.chunk.js.map",
+    "270.9b626c37.chunk.js.map": "/rick-morty-app/static/js/270.9b626c37.chunk.js.map",
+    "820.cfe44730.chunk.js.map": "/rick-morty-app/static/js/820.cfe44730.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3d5249d.css",
+    "static/js/main.99802832.js"
+  ]
+}
