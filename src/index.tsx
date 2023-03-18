@@ -6,7 +6,7 @@ import { AuthContextProvider } from './context/AuthContext';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter basename="/rick-morty-app">
+    <BrowserRouter>
       <AuthContextProvider>
         <App />
       </AuthContextProvider>
