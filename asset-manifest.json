@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/rick-morty-app/static/css/main.c3d5249d.css",
-    "main.js": "/rick-morty-app/static/js/main.c7416a35.js",
-    "static/js/389.fe2f471c.chunk.js": "/rick-morty-app/static/js/389.fe2f471c.chunk.js",
-    "static/js/510.3eedbc50.chunk.js": "/rick-morty-app/static/js/510.3eedbc50.chunk.js",
-    "static/js/682.0cb55eff.chunk.js": "/rick-morty-app/static/js/682.0cb55eff.chunk.js",
-    "static/js/270.9b626c37.chunk.js": "/rick-morty-app/static/js/270.9b626c37.chunk.js",
-    "static/js/820.cfe44730.chunk.js": "/rick-morty-app/static/js/820.cfe44730.chunk.js",
-    "static/media/heroimg.png": "/rick-morty-app/static/media/heroimg.7119f9df7519fa43c7a0.png",
-    "index.html": "/rick-morty-app/index.html",
-    "main.c3d5249d.css.map": "/rick-morty-app/static/css/main.c3d5249d.css.map",
-    "main.c7416a35.js.map": "/rick-morty-app/static/js/main.c7416a35.js.map",
-    "389.fe2f471c.chunk.js.map": "/rick-morty-app/static/js/389.fe2f471c.chunk.js.map",
-    "510.3eedbc50.chunk.js.map": "/rick-morty-app/static/js/510.3eedbc50.chunk.js.map",
-    "682.0cb55eff.chunk.js.map": "/rick-morty-app/static/js/682.0cb55eff.chunk.js.map",
-    "270.9b626c37.chunk.js.map": "/rick-morty-app/static/js/270.9b626c37.chunk.js.map",
-    "820.cfe44730.chunk.js.map": "/rick-morty-app/static/js/820.cfe44730.chunk.js.map"
+    "main.css": "/static/css/main.c3d5249d.css",
+    "main.js": "/static/js/main.97ba5253.js",
+    "static/js/389.fe2f471c.chunk.js": "/static/js/389.fe2f471c.chunk.js",
+    "static/js/510.3eedbc50.chunk.js": "/static/js/510.3eedbc50.chunk.js",
+    "static/js/682.0cb55eff.chunk.js": "/static/js/682.0cb55eff.chunk.js",
+    "static/js/270.9b626c37.chunk.js": "/static/js/270.9b626c37.chunk.js",
+    "static/js/820.cfe44730.chunk.js": "/static/js/820.cfe44730.chunk.js",
+    "static/media/heroimg.png": "/static/media/heroimg.7119f9df7519fa43c7a0.png",
+    "index.html": "/index.html",
+    "main.c3d5249d.css.map": "/static/css/main.c3d5249d.css.map",
+    "main.97ba5253.js.map": "/static/js/main.97ba5253.js.map",
+    "389.fe2f471c.chunk.js.map": "/static/js/389.fe2f471c.chunk.js.map",
+    "510.3eedbc50.chunk.js.map": "/static/js/510.3eedbc50.chunk.js.map",
+    "682.0cb55eff.chunk.js.map": "/static/js/682.0cb55eff.chunk.js.map",
+    "270.9b626c37.chunk.js.map": "/static/js/270.9b626c37.chunk.js.map",
+    "820.cfe44730.chunk.js.map": "/static/js/820.cfe44730.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c3d5249d.css",
-    "static/js/main.c7416a35.js"
+    "static/js/main.97ba5253.js"
   ]
 }
