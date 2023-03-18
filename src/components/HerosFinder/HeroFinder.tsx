@@ -1,7 +1,12 @@
 import { AiOutlineSearch } from 'react-icons/ai';
 import { Finder, Wrap } from './HeroFinder.styled';
 
-export const HeroFinder = ({ onChange, query }) => {
+interface IProps {
+  onChange: (event: any) => void;
+  query: string;
+}
+
+export const HeroFinder: React.FC<IProps> = ({ onChange, query }) => {
   return (
     <>
       <Wrap>

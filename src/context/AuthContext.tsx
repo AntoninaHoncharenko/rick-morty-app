@@ -8,10 +8,25 @@ import {
 } from 'firebase/auth';
 import { app, provider } from '../firebase';
 
-const AuthContext = createContext();
+interface IContext {
+  logIn: () => void;
+  logOut: () => void;
+  user: string;
+}
+interface IProps {
+  children: JSX.Element;
+}
 
-export const AuthContextProvider = ({ children }) => {
-  const [user, setUser] = useState(localStorage.getItem('user') || '');
+const defaultValue: IContext = {
+  logIn: () => {},
+  logOut: () => {},
+  user: '',
+};
+
+const AuthContext = createContext<IContext>(defaultValue);
+
+export const AuthContextProvider: React.FC<IProps> = ({ children }) => {
+  const [user, setUser] = useState<string>(localStorage.getItem('user') || '');
   const auth = getAuth(app);
 
   const logIn = () => {
@@ -23,8 +38,8 @@ export const AuthContextProvider = ({ children }) => {
       if (!user) {
         return;
       }
-      setUser(user.displayName);
-      localStorage.setItem('user', user.displayName);
+      setUser(user ? user.displayName || '' : '');
+      localStorage.setItem('user', user ? user.displayName || '' : '');
     });
     return () => unsubscribe();
   }, [auth]);

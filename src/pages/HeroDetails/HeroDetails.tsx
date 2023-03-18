@@ -15,16 +15,19 @@ import {
   InfoTitle,
   InfoText,
 } from './HeroDetails.styled';
+import { IHero } from 'types/heroDetailsType';
+import { ILocation } from 'types/locationType';
 
-const HeroDetails = () => {
-  const [character, setCharacter] = useState(null);
-  const { heroId } = useParams();
-  const location = useLocation();
+const HeroDetails: React.FC = () => {
+  const [character, setCharacter] = useState<IHero | null>(null);
+  const { heroId } = useParams<string>();
+  const location: ILocation = useLocation();
+  const id = heroId ? heroId : '';
 
   useEffect(() => {
     async function getOneCharacters() {
       try {
-        const data = await fetchOneCharacters(heroId);
+        const data = await fetchOneCharacters(id);
         setCharacter(data);
       } catch (error) {
         console.log(error);
@@ -32,10 +35,10 @@ const HeroDetails = () => {
     }
 
     getOneCharacters();
-  }, [heroId]);
+  }, [id]);
 
   if (!character) {
-    return;
+    return null;
   }
 
   const { image, name, status, species, gender, type, origin } = character;

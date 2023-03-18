@@ -6,7 +6,7 @@ const MainPage = lazy(() => import('../pages/MainPage/MainPage'));
 const HeroDetails = lazy(() => import('../pages/HeroDetails/HeroDetails'));
 const LoginPage = lazy(() => import('../pages/LoginPage/LoginPage'));
 
-export const App = () => {
+export const App: React.FC = () => {
   return (
     <div>
       <Suspense fallback={null}>

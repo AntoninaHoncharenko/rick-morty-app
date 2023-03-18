@@ -6,18 +6,24 @@ import { CharactersList } from 'components/HeroList/HeroList';
 import { Container, BackLink, BackText, UserName } from './MainPage.styled';
 import { BiLeftArrowAlt } from 'react-icons/bi';
 import { UserAuth } from 'context/AuthContext';
+import { IHero } from 'types/heroTypes';
 
-const MainPage = () => {
-  const [characters, setCharacters] = useState([]);
-  const [filteredCharacters, setFilteredCharacters] = useState(characters);
-  const [query, setQuery] = useState(localStorage.getItem('query') || '');
+const MainPage: React.FC = () => {
+  const [characters, setCharacters] = useState<IHero[]>([]);
+  const [filteredCharacters, setFilteredCharacters] =
+    useState<IHero[]>(characters);
+  const [query, setQuery] = useState<string>(
+    localStorage.getItem('query') || ''
+  );
   const { user, logOut } = UserAuth();
 
   useEffect(() => {
     async function getAllCharacters() {
       try {
         const data = await fetchAllCharacters();
-        const sortedData = data.sort((a, b) => a.name.localeCompare(b.name));
+        const sortedData = data.sort((a: IHero, b: IHero) =>
+          a.name.localeCompare(b.name)
+        );
         setCharacters(sortedData);
       } catch (error) {
         console.log(error);
@@ -36,7 +42,7 @@ const MainPage = () => {
     localStorage.setItem('query', query);
   }, [characters, query]);
 
-  const onChange = event => {
+  const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(event.target.value);
   };
 
