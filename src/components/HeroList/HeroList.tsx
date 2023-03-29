@@ -10,7 +10,7 @@ export const CharactersList: React.FC<IProps> = ({ characters }) => {
   return (
     <>
       <List>
-        {characters.map(char => {
+        {characters?.map(char => {
           const { id, image, name, species } = char;
           return (
             <Link to={`/${id}`} key={id}>

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const List = styled.ul`
+  margin-bottom: 40px;
   @media screen and (min-width: 1050px) {
     display: flex;
     gap: 24px 20px;
