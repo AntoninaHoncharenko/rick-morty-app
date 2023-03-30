@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { HeroImage } from 'components/HeroImage/HeroImage';
 import { HeroFinder } from 'components/HerosFinder/HeroFinder';
 import { Pagination } from 'components/Pagination/Pagination';
-import { fetchAllCharacters, fetchCharactersByName } from 'api';
+import { fetchCharactersByName } from 'api';
 import { CharactersList } from 'components/HeroList/HeroList';
 import { Container, BackLink, BackText, UserName } from './MainPage.styled';
 import { BiLeftArrowAlt } from 'react-icons/bi';

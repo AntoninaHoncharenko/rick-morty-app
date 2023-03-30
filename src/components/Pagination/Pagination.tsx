@@ -1,3 +1,12 @@
+import {
+  MdKeyboardDoubleArrowRight,
+  MdKeyboardDoubleArrowLeft,
+  MdKeyboardArrowRight,
+  MdKeyboardArrowLeft,
+} from 'react-icons/md';
+
+import { Wrap, Currentpage, Button } from './Pagination.styled';
+
 interface IProps {
   toNextPage: () => void;
   toPrevPage: () => void;
@@ -16,23 +25,23 @@ export const Pagination: React.FC<IProps> = ({
   totalPages,
 }) => {
   return (
-    <div>
-      <button onClick={toStart} disabled={page === 1 ? true : false}>
-        Start
-      </button>
-      <button onClick={toPrevPage} disabled={page > 1 ? false : true}>
-        Prev page
-      </button>
-      <p>{page}</p>
-      <button
+    <Wrap>
+      <Button onClick={toStart} disabled={page === 1 ? true : false}>
+        <MdKeyboardDoubleArrowLeft size="36" />
+      </Button>
+      <Button onClick={toPrevPage} disabled={page > 1 ? false : true}>
+        <MdKeyboardArrowLeft size="36" />
+      </Button>
+      <Currentpage>{page}</Currentpage>
+      <Button
         onClick={toNextPage}
         disabled={page === totalPages ? true : false}
       >
-        Next page
-      </button>
-      <button onClick={toEnd} disabled={page === totalPages ? true : false}>
-        End
-      </button>
-    </div>
+        <MdKeyboardArrowRight size="36" />
+      </Button>
+      <Button onClick={toEnd} disabled={page === totalPages ? true : false}>
+        <MdKeyboardDoubleArrowRight size="36" />
+      </Button>
+    </Wrap>
   );
 };
