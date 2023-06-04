@@ -1,4 +1,4 @@
-# Rick and Morty App - React Application
+# Rick and Morty App
 
 This is a Rick and Morty App created with Create React App, using Typescript.
 The application allows users to search characters and get information about it.
