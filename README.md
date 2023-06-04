@@ -36,7 +36,7 @@ Deploy application on Netlify hosting.
 
 ## Technologies
 
-The Rick and Morty App is built using the TypeScript and additiona libraries:
+The Rick and Morty App is built using the TypeScript and additional libraries:
 
 axios, styled-components, firebase
 
